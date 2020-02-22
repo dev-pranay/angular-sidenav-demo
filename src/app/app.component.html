@@ -1,0 +1,30 @@
+<mat-toolbar color="primary" class="app-header">
+    <button mat-icon-button (click)="snav.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+    <h1>Welcome!</h1>
+</mat-toolbar>
+<mat-sidenav-container [hasBackdrop]="true">
+    <mat-sidenav #snav mode="side" opened class="sidenav">
+        <mat-nav-list>
+            <ul *ngFor="let topic of topics">
+                <li>{{topic}}</li>
+            </ul>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <main>
+            <router-outlet>
+                <h2>Hello there!</h2>
+                <p>
+                    <button mat-raised-button color="primary" (click)="snav.toggle()">
+                        Toggle Sidenav</button>
+                </p>
+                <div *ngFor="let paragraph of paragraphs">{{paragraph}}</div>
+            </router-outlet>
+        </main>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+<footer>
+    <mat-toolbar color="primary" class="app-footer">Footer</mat-toolbar>
+</footer>

@@ -1,0 +1,49 @@
+html,
+body {
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+
+.sidenav {
+    font-family: Arial, Roboto, Helvetica Neue, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    border: 2px solid;
+    padding: 10px;
+    width: 120px;
+}
+
+.sidenav ul li {
+    list-style-type: none;
+}
+
+.sidenav ul {
+    list-style-position: inside;
+    padding: 5px;
+    margin: 8px;
+    text-align: center;
+}
+
+.app-header {
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.app-footer {
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.content {
+    min-height: 65vh;
+    border: 2px solid #2828cf;
+    padding: 10px;
+    font-family: Arial, Roboto, Helvetica Neue, Helvetica, sans-serif;
+}
