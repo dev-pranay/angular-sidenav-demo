@@ -5,7 +5,7 @@
     <h1>Welcome!</h1>
 </mat-toolbar>
 <mat-sidenav-container [hasBackdrop]="true">
-    <mat-sidenav #snav mode="side" opened class="sidenav">
+    <mat-sidenav #snav mode="side" opened class="sidenav" disableClose>
         <mat-nav-list>
             <ul *ngFor="let topic of topics">
                 <li>{{topic}}</li>
